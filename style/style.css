@@ -308,11 +308,123 @@ font-weight:500;
   font-size: 0.7rem;
   color: #A0A6A5;
 }
-.headerCard a {
+.attendant .headerCard a {
   float: left;
+  transform: rotate(0deg);
+}
+ 
+.attendant a.collapsed {
   transform: rotate(180deg);
 }
 
-a.collapsed {
-  transform: rotate(0deg);
+
+/* +++++++++++ DEVICES ++++++++++++++++++++*/
+
+.manguera {
+
+}
+
+.device {
+  max-width: 140px;
+  padding-top:2rem;
+}
+.device img {
+  width: 200px;
+}
+.devices .headerCard{
+  padding: 0 ;
+}
+
+.content-device {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.devices .tab-content {
+  overflow: hidden;
+}
+
+.devices .status {
+  position: absolute;
+  right: 10px;
+  margin-top: 10px;
+
+}
+
+.form.preset {
+  display: flex;
+  column-gap: 10px;
+  padding: 0 1rem;
+}
+
+.devices ul.nav.nav-pills {
+  margin: 1rem;
+  background: #DEE9EC;
+  border-radius: 10px;
+  color: white;
+  padding: 3px;
+}
+a.nav-link {
+  color: gray;
+}
+.devices .nav-pills .nav-link.active, .devices .nav-pills .show>.nav-link {
+  color: gray;
+  background-color: white;
+  border-radius:10px;
+}
+
+.drop-device {
+  background: url(images/drop.svg) no-repeat center center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.devices a.nav-control {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.cards.devices .card.card-body {
+  display: block;
+}
+
+.cards.devices .minicard {
+  display: flex;
+  align-items: center;
+}
+
+.devices .minicard p {
+  font-weight: bolder;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.devices .minicard i {
+  font-size: 1.5rem;
+  padding: 0.9rem;
+  background: #EEEDF0;
+  margin: 5px 10px 5px 5px;
+  color: black;
+  border-radius: 10px;
+}
+
+.devices .btn-group {
+  width: 100%;
+  display: grid;
+  align-items: baseline;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.devices .btn-group button{
+  height:35px;
+}
+.devices .btn-group button:first-child {
+  border-radius:15px;
+}
+
+.devices .btn-group button:last-child {
+  border-radius:0 15px 15px 0;
 }

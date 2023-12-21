@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Devices</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+<link rel="stylesheet" href="style/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- <div id="toolbar">
+  <button id="remove" class="btn btn-danger" disabled>
+    <i class="fa fa-remove"></i> Delete
+  </button>
+</div> -->
+
+<div class="container devices">
+  <br>
+  <div class="d-flex justify-content-between">
+    <h2>Devices</h2>
+    <button class="btn orange white btn-lg btn-rounded" type="button">+ Add</button>
+  </div>
+<br>
+
+
+<div class="cards devices">
+  <div class="card dropdown" id="device1">
+    <div class="headerCard">
+      
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a href="#info" role="tab" data-toggle="tab"
+             class="nav-link active"> Free </a>
+        </li>
+        <li class="nav-item">
+          <a href="#ratings" role="tab" data-toggle="tab"
+             class="nav-link"> preset </a>
+        </li>
+        
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" role="tabpanel" id="info">
+         
+         
+        </div>
+        <div class="tab-pane" role="tabpanel" id="ratings">
+         
+          <div class="form preset">
+            <select class="form-control" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <input class="form-control" type="text" value="Volume" aria-label="volume" >
+          </div>
+        </div>
+     
+      </div>
+      <div class="status"> 
+        <div class="circle red small"></div>
+      </div>
+      <div class="content-device" >
+        <div class="manguera">
+          <img src="images/manguera.svg"/>
+          <div class="drops"> 25%</div>
+          <img src="images/drop-devices.svg"/>
+        </div>
+        <div class="device">
+          <img src="images/device-1.png" alt="device1">
+        </div>
+      </div>
+    <a role="button" class="nav-control" href="#collapseCard1" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-chevron-up"></i> </a> 
+    </div>
+    <div id="collapseCard1" class="collapse" data-parent="#device1" >
+      <div class="card card-body">
+        <div class="minicard">
+          <i class="fa-regular fa-window-restore"></i>
+          <div>Channel
+            <p>1 </p>
+
+          </div>
+         
+        </div>
+
+        <div class="minicard">
+          <i class="fa-regular fa-address-book"></i>
+          <div>Hose
+            <p>86</p>
+          </div>
+         
+        </div>               
+        
+        <div class="minicard">
+          <i class="fa-regular fa-star"></i>
+          <div>Product 
+             <p>Diesel</p>
+          </div>
+           
+        </div>  
+ 
+      </div>
+      <div class="button-card">
+        <div class="btn-group" role="group"  >
+          <button type="button" class="btn btn-block btn-sm btn-secondary">TXN</button>
+          <button type="button" class="btn btn-block btn-sm btn-secondary">SHIFT</button>
+          <button type="button" class="btn btn-block btn-sm orange white">STOP</button>
+        </div>
+        
+      </div>
+   
+    </div>
+  </div>
+ 
+
+
+
+
+</div>
+
+		
+
+
+</div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script  src="js/script.js"></script>
+
+</body>
+</html>
