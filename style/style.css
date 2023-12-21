@@ -266,7 +266,7 @@ font-weight:500;
 }
 
 .drops {
-  background: url(images/drop.svg) no-repeat center center;
+  background: url(../images/drop.svg) no-repeat center center;
   color: white;
   padding: 1.5rem;
   font-size: 0.8rem;
@@ -375,11 +375,16 @@ a.nav-link {
   border-radius:10px;
 }
 
-.drop-device {
-  background: url(images/drop.svg) no-repeat center center;
+.drop-devices {
+  background: url(../images/drop-devices.svg) no-repeat center center;
   color: white;
-  padding: 1.5rem;
+  padding: 3rem 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.drop-devices span{
   font-size: 0.8rem;
+  text-align: center;
 }
 
 .devices a.nav-control {
