@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>attendant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://unpkg.com/bootstrap-table@1.15.4/dist/bootstrap-table.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css'>
+<link rel="stylesheet" href="./style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- <div id="toolbar">
+  <button id="remove" class="btn btn-danger" disabled>
+    <i class="fa fa-remove"></i> Delete
+  </button>
+</div> -->
+
+<div class="container attendant"  >
+  <br>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary btn-lg btn-rounded" type="button">view speedtanks</button>
+  </div>
+<br>
+
+
+<div class="cards">
+  <div class="card dropdown" id="attendant1">
+    <div class="headerCard">
+      <div class="status"> 
+        <div class="circle red small"></div>
+      </div>
+      <div class="mainCircle ">
+        <div class="water"></div>
+          <div class="texts">
+            <p>Progress Today</p>
+             <div class="mainNum">%45</div>
+            </div>
+            <div class="drops"> 25%</div>
+           
+      </div>
+    <a role="button" href="#collapseCard1" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-chevron-up"></i> </a> 
+    </div>
+    <div id="collapseCard1" class="collapse" data-parent="#attendant1" >
+      <div class="card card-body">
+        <div class="minicard">
+          <i class="fa-regular fa-heart"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>
+
+        <div class="minicard">
+          <i class="fa-solid fa-earth-americas"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>        
+        
+        <div class="minicard">
+          <i class="fa-regular fa-clock"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>       
+        <div class="minicard">
+          <i class="fa-regular fa-star"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>
+
+        <div class="minicard">
+          <i class="fa-regular fa-hourglass"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>        
+        
+        <div class="minicard">
+          <i class="fa-regular fa-address-card"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>  
+ 
+      </div>
+      <div class="button-card">
+        <button class="btn btn-primary btn-block btn-sm btn-rounded" type="button"  >PAUSE</button>
+      </div>
+   
+    </div>
+  </div>
+ 
+ 
+  <div class="card dropdown" id="attendant2">
+    <div class="headerCard">
+      <div class="status"> 
+        <div class="circle orange small"></div>
+      </div>
+      <div class="mainCircle ">
+        <div class="water"></div>
+          <div class="texts">
+            <p>Progress Today</p>
+             <div class="mainNum">%45</div>
+            </div>
+            <div class="drops"> 25%</div>
+           
+      </div>
+    <a role="button" href="#collapseCard2" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-chevron-up"></i> </a> 
+    </div>
+    <div id="collapseCard2" class="collapse" data-parent="#attendant2" >
+      <div class="card card-body">
+        <div class="minicard">
+          <i class="fa-regular fa-heart"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>
+
+        <div class="minicard">
+          <i class="fa-solid fa-earth-americas"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>        
+        
+        <div class="minicard">
+          <i class="fa-regular fa-clock"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>       
+        <div class="minicard">
+          <i class="fa-regular fa-star"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>
+
+        <div class="minicard">
+          <i class="fa-regular fa-hourglass"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>        
+        
+        <div class="minicard">
+          <i class="fa-regular fa-address-card"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>  
+ 
+      </div>
+      <div class="button-card">
+        <button class="btn btn-primary btn-block btn-sm btn-rounded" type="button"  >PAUSE</button>
+   
+      </div>
+   
+    </div>
+  </div>
+
+
+  <div class="card dropdown" id="attendant3">
+    <div class="headerCard">
+      <div class="status"> 
+        <div class="circle green small"></div>
+      </div>
+      <div class="mainCircle ">
+        <div class="water"></div>
+          <div class="texts">
+            <p>Progress Today</p>
+             <div class="mainNum">%45</div>
+            </div>
+            <div class="drops"> 25%</div>
+           
+      </div>
+    <a role="button" href="#collapseCard3" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample"><i class="fa-solid fa-chevron-up"></i> </a> 
+    </div>
+    <div id="collapseCard3" class="collapse" data-parent="#attendant3" >
+      <div class="card card-body">
+        <div class="minicard">
+          <i class="fa-regular fa-heart"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>
+
+        <div class="minicard">
+          <i class="fa-solid fa-earth-americas"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>        
+        
+        <div class="minicard">
+          <i class="fa-regular fa-clock"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>       
+        <div class="minicard">
+          <i class="fa-regular fa-star"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>
+
+        <div class="minicard">
+          <i class="fa-regular fa-hourglass"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>        
+        
+        <div class="minicard">
+          <i class="fa-regular fa-address-card"></i>
+          <div>LOCATION</div>
+          <p>86 <span>km</span></p>
+        </div>  
+ 
+      </div>
+      <div class="button-card">
+        <button class="btn btn-primary btn-block btn-sm btn-rounded" type="button"  >PAUSE</button>
+      </div>
+   
+    </div>
+  </div>
+
+
+
+
+</div>
+
+		
+
+
+</div>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>

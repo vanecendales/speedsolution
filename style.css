@@ -1,0 +1,318 @@
+:root {
+  --blue1: #1BAFFD;
+  --blue2: #017DC0;
+  --orange1: #FF8426;
+  --orange2: #FF9F57;
+  --green: #35DF8D;
+  --red: #FF4242;
+  --text: #475569;
+
+}
+button.btn.btn-link {
+ color: var(--text);
+}
+.select,
+  #locale {
+    width: 100%;
+  }
+  .like {
+    margin-right: 10px;
+  }
+
+.white{
+  color: white;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #F8F9FA;
+  font-family: 'League Spartan', sans-serif;
+  font-size:14px;
+  color: var(--text);
+}
+.fixed-table-container {
+  background: white;
+  border-radius: 20px;
+  border: none;
+}
+.table-bordered td, .table-bordered th, .table-bordered {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.page-item.active .page-link{
+ background: var(--blue2);
+}
+thead, h2 {
+  color: var(--blue2);
+  font-weight:bolder;
+  font-family: 'League Spartan', sans-serif;
+}
+button.btn.btn-secondary {
+  background: var(--blue2);
+  border: none;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dropdown-container, .instructions {
+/*   width: 200px; */
+/*   margin: 20px auto 0; */
+  font-size: 14px;
+  font-family: sans-serif;
+/*   overflow: auto; */
+}
+
+.instructions {
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-button {
+  float: left;
+  width: 100%;
+  background: whitesmoke;
+  padding: 10px 12px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+}
+.dropdown-button .dropdown-label, .dropdown-button .dropdown-quantity {
+  float: left;
+}
+.dropdown-button .dropdown-quantity {
+  margin-left: 4px;
+}
+.dropdown-button .fa-filter {
+  float: right;
+}
+
+.dropdown-list {
+  float: left;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-top: none;
+  box-sizing: border-box;
+  padding: 10px 12px;
+}
+.dropdown-list input[type="search"] {
+  padding: 5px 0;
+}
+.dropdown-list ul {
+  margin: 10px 0;
+/*   max-height: 200px; */
+/*   overflow-y: auto; */
+}
+.dropdown-list ul input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+/*status*/
+
+.circle{
+  background: grey;
+  border-radius:99px;
+  width:30px;
+  height: 30px;
+}
+.label{
+  background: grey;
+  border-radius:10px;
+  width:auto;
+  height: 30px;
+  text-align: center;
+color:white;
+font-weight:500;
+  line-height: 30px;
+  padding: 0 20px;
+}
+.green, .yes{
+  background:  var(--green);
+}
+
+.red, .no{
+  background:  var(--red);
+}
+.orange{
+  background:  var(--orange2);
+}
+
+@media (min-width: 200px) and (max-width: 798px) {
+ h2{
+  text-align: center;
+  width: 100%;
+
+ }
+ .float-right.search.btn-group {
+  display: none;
+}
+}
+
+
+/*+++++ATTENDANT PAGE++++*/
+.circle.small {
+  width: 15px;
+  height: 15px;
+}
+.cards {
+  display: flex;
+ flex-wrap: wrap; 
+ gap:  20px;
+ justify-content: flex-start;
+ align-items: start;
+}
+
+.attendant{
+  text-align: center;
+}
+.status {
+  float: right;
+}
+
+.water {
+  border-radius: 9999px;
+  width: 210px;
+  background: rgb(255, 255, 255);
+  margin: 0px auto;
+  height: 210px;
+  position: relative;
+  background-color: var(--orange2);
+  box-shadow: inset 0 0 50px var(--orange1);
+  clip-path: circle(50% at 50% 50%);
+  position: absolute;
+  z-index: 1; 
+}
+.water::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -150%;
+  left: -50%;
+  background-color: #ffbb00;
+  border-radius: 40%;
+  animation: moving 20s linear infinite;
+  
+}
+.water::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 201%;
+  top: -150%;
+  left: -52%;
+  background-color: #f3f3f2;
+  border-radius: 40%;
+  animation: moving 20s linear infinite;
+  animation-delay: 0.9s;
+}
+@keyframes moving {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.texts, .drops {
+  z-index: 3;
+  position: relative;
+}
+.card{
+  border:none;
+}
+.headerCard {
+  width:244px;
+  padding: 1rem;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  position: relative;
+}
+.card.card-body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.card .collapse{
+  color: #A0A6A5;
+  margin-top:-10px;
+  border-radius: 0 0 20px 20px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  position: relative;
+
+}
+.texts {
+  padding-top: 60px;
+}
+
+.texts p{
+  margin:0px;
+}
+.mainNum {
+  font-size: 2rem;
+  font-weight: 900;
+  padding-bottom: 30px;
+}
+
+.drops {
+  background: url(images/drop.svg) no-repeat center center;
+  color: white;
+  padding: 1.5rem;
+  font-size: 0.8rem;
+}
+.button-card {
+  width: 90%;
+  margin: 0 auto 20px;
+}
+.headerCard button {
+  position: relative;
+  z-index: 3;
+  border: none;
+  float: left;
+  background: none;
+}
+.mainCircle {
+  height: 234px;
+}
+
+
+
+.minicard {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.minicard div {
+  font-size: 12px;
+}
+.minicard i {
+  font-size: 1.5rem;
+  padding:1rem;
+}
+.minicard p {
+  color:black;
+  margin:0px;
+}
+.minicard span {
+  font-size: 0.7rem;
+  color: #A0A6A5;
+}
+.headerCard a {
+  float: left;
+  transform: rotate(180deg);
+}
+
+a.collapsed {
+  transform: rotate(0deg);
+}
