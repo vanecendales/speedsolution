@@ -1,3 +1,5 @@
+
+
 var $table = $('#table')
   var $remove = $('#remove')
   var selections = []
@@ -335,3 +337,4 @@ $(document).ready(function () {
     });
 
 // https://examples.bootstrap-table.com/index.html#methods/get-visible-hidden-columns.html#view-source
+
