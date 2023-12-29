@@ -258,10 +258,7 @@ font-weight:500;
   position: relative;
 }
 .card.card-body{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 10px;
-  row-gap: 10px;
+text-align:left;
 }
 .card .collapse{
   color: #A0A6A5;
@@ -348,21 +345,22 @@ font-weight:500;
 }
 
 .device {
-  max-width: 140px;
-  padding-top:2rem;
+  padding-top: 1rem;
+  display: grid;
+  align-items: flex-end;
 }
 .device img {
-  width: 200px;
+  width: 100%;
 }
 .devices .headerCard{
   padding: 0 ;
 }
 
 .content-device {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 20px;
-    overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  padding-top: 20px;
+  overflow: hidden;
 }
 
 .devices .tab-content {
@@ -441,18 +439,18 @@ font-weight: 900;
   display: block;
 }
 
-.cards.devices .minicard {
+.card .minicard {
   display: flex;
   align-items: center;
 }
 
-.devices .minicard p {
+.card .minicard p {
   font-weight: bolder;
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-.devices .minicard i {
+.card .minicard i {
   font-size: 1.5rem;
   padding: 0.9rem;
   background: #EEEDF0;
