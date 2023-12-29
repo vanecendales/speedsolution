@@ -339,9 +339,12 @@ font-weight:500;
 
 
 /* +++++++++++ DEVICES ++++++++++++++++++++*/
-
-.manguera {
-
+.manguera{
+  text-align: ;
+}
+.manguera img {
+  transform: rotate(20deg);
+  margin-left:-8px;
 }
 
 .device {
@@ -394,13 +397,34 @@ a.nav-link {
   background-color: white;
   border-radius:10px;
 }
-
+.totalDevices {
+  padding: 1rem;
+}
+.totalDevices {
+  padding: 1rem;
+  color: var(--blue2)
+}
+.totalDevices div:nth-child(1){
+  text-align: center;
+}
+.totalDevices div:nth-child(2){
+font-size: 1.4rem;
+text-align: right;
+font-weight: 900;
+}
+.totalDevices div:nth-child(3){
+  font: size 1rem;
+  text-align: right;
+}
 .drop-devices {
   background: url(../images/drop-devices.svg) no-repeat center center;
   color: white;
   padding: 3rem 1rem;
   font-size: 1.5rem;
   text-align: center;
+  width: 30px;
+  background-size: 83%;
+  margin:0 auto;
 }
 .drop-devices span{
   font-size: 0.8rem;
