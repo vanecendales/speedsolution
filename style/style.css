@@ -120,7 +120,24 @@ button.btn.btn-secondary {
 }
 
 /*status*/
-
+.status{
+  display: flex;
+  font-size: .6rem;
+  align-items:center;
+  gap: 5px;
+}
+p.red{
+  color:var(--red);
+  background: none;
+  padding:0px;
+  margin:0px;
+}
+p.green{
+  color:var(--green);
+  background: none;
+  padding:0px;
+  margin:0px;
+}
 .circle{
   background: grey;
   border-radius:99px;
@@ -403,7 +420,7 @@ a.nav-link {
   color: var(--blue2)
 }
 .totalDevices div:nth-child(1){
-  text-align: center;
+  text-align: left;
 }
 .totalDevices div:nth-child(2){
 font-size: 1.4rem;
