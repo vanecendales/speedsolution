@@ -273,6 +273,7 @@ font-weight:500;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   position: relative;
+  margin-bottom: 20px;
 }
 .card.card-body{
 text-align:left;
@@ -589,10 +590,14 @@ span.badge.badge-pill.bg-soft-success.text-success.me-2 {
   .card-dashboard, .input-group{
     width: 98%;
   }
+
   
 }
 @media (width < 768px){
 .d-flex.justify-content-between {
   display: block!important;
+}
+.cards {
+  justify-content: center;
 }
 }
